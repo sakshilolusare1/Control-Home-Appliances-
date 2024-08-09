@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliance Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color:rgb(22, 21, 22);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .appliance-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(158, 129, 222, 0.1);
+            margin: 15px;
+            padding: 20px;
+        }
+        .toggle, .slider {
+            margin: 10px 0;
+        }
+        .slider input {
+            width: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        Home Appliance Control
+    </div>
+    <div class="appliance-card">
+        <h2>Fan</h2>
+        <div class="toggle">
+            <label>ON/OFF</label>
+            <input type="checkbox">
+        </div>
+        <div class="slider">
+            <label>Speed</label>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+    </div>
+    <div class="appliance-card">
+        <h2>Air Conditioner</h2>
+        <div class="toggle">
+            <label>ON/OFF</label>
+            <input type="checkbox">
+        </div>
+        <div class="slider">
+            <label>Temperature</label>
+            <input type="range" min="16" max="30" value="22">
+        </div>
+    </div>
+
+    <div class="appliance-card">
+        <h2>Lights & Bulbs</h2>
+        <div class="toggle">
+            <label>ON/OFF</label>
+            <input type="checkbox">
+        </div>
+        <div class="slider">
+            <label>Brightness</label>
+            <input type="range" min="0" max="100" value="75">
+        </div>
+        <div class="slider">
+            <label>Color</label>
+            <input type="color">
+        </div>
+    </div>
+
+    <div class="appliance-card">
+        <h2>TV</h2>
+        <div class="toggle">
+            <label>ON/OFF</label>
+            <input type="checkbox">
+        </div>
+    </div>
+</body>
+</html>
